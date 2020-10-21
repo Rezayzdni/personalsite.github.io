@@ -1,2 +1,0 @@
-# personalsite.github.io
-blog
