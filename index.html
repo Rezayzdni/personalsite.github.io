@@ -340,14 +340,14 @@ a{
 	
 }
 
-@media(max-width: 900px){
+@media screen and (max-width: 900px){
 	#about{
 		justify-content: center;
 		padding-top: 0px;
 		height: 175vh;
 	}
 }
-@media(max-width:600px){
+@media screen and (max-width:600px){
 	.p-container{
 		grid-template-columns:1fr ;
 		grid-template-rows: auto;}
@@ -370,20 +370,27 @@ a{
     	height: 100%;
     }
     #My-Fav h1{
-    	width: 50%;
+    	width: 100%;
+    }
+    #My-Fav{
+    	height: 100%;
     }
     .progress{
     	width: 100%;
     }
-    .custom-footer{
-    	display: block;
-    	position: fixed;
+    .bad-div{
+    	height: 100px;
     }
+    .custom-footer{
+        position: fixed;
+
+    }
+
 }
 
 @media(max-height: 300px){
 	#about{
-    	height: 280vh;
+    	height: 100%;
     }
 
 }
@@ -628,6 +635,10 @@ body {
 	</div>
 	<!--bg-img-->
 	<img src="http://s17.picofile.com/file/8411580092/body.png" alt="tmp">
+	</div>
+
+	<div class="bad-div">
+		
 	</div>
 
 
