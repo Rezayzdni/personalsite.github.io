@@ -18,15 +18,11 @@
       box-sizing : border-box;
     }
 
-html{
-	overflow-x: hidden;
-	   }
 
 body{
 	margin: 0;
 	padding: 0;
 	background-color: #16161616;
-	overflow-x: hidden;
 
 }
 
@@ -273,7 +269,7 @@ a{
 
 
 
-@media(max-width:1190px){
+@media screen and (max-width:1190px){
 	#main{
 		background-size: 1150px !important;
 		
@@ -285,7 +281,36 @@ a{
 	}
 
 }
-@media(max-width:970px){
+
+@media screen and (min-width: 970px) and (max-width: 1190px){
+	#main{
+		background-image: none !important;
+		
+	}
+	.name{
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+	
+	#about{
+		justify-content: center;
+		padding-top: 0px;
+		height: 175vh;
+	}
+	.about-text{
+		width: 90%;
+	}
+	.about-text h1{
+		font-size:4rem;
+	}
+	
+	.p-container{
+		width:100%;
+	
+	}
+}
+@media screen and (max-width:970px){
 	#main{
 		background-image: none !important;
 		
@@ -342,13 +367,13 @@ a{
 	}
 
     #about{
-    	height: 210vh;
+    	height: 100%;
     }
     #My-Fav h1{
     	width: 50%;
     }
     .progress{
-    	width: 450px;
+    	width: 100%;
     }
     .custom-footer{
     	display: block;
